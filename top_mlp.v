@@ -23,7 +23,7 @@ module top_mlp #(
     // output buffer interface
     output  wire                            y_buf_en,
     output  wire                            y_buf_wr_en,
-    output  wire [$clog2(Y_BUF_DEPTH)-1:0]  y_buf_addr,			// modify in 2023-05-10, [$clog2(Y_BUF_DEPTH)-1:0] -> [Y_BUF_ADDR_WIDTH-1:0]
+    output  wire [Y_BUF_ADDR_WIDTH-1:0]     y_buf_addr,			// modify in 2023-05-10, [$clog2(Y_BUF_DEPTH)-1:0] -> [Y_BUF_ADDR_WIDTH-1:0]
     output  wire [Y_BUF_DATA_WIDTH-1:0]     y_buf_data
 );
 

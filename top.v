@@ -151,7 +151,7 @@ module top #(
     );
     
     temp_buf #(
-        .DATAWIDHT(Y_BUF_DATA_WIDTH),
+        .DATA_WIDHT(Y_BUF_DATA_WIDTH),
         .ADDR_WIDTH(Y_BUF_ADDR_WIDTH)
     ) temp_buf(
         .clk(clk_i),

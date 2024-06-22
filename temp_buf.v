@@ -1,12 +1,12 @@
 
 module temp_buf #(
     parameter DATA_WIDTH = 32,
-    parameter ADDR_WIDTH = 7
+    parameter ADDR_WIDTH = 32
 ) (
     input   wire clk,
     input   wire rst_n,
     input   wire buf_wr_start,
-    input   wire [32*10-1:0] data_in, // 32비트 10개로 변경
+    input   wire [32*10-1:0] data_in, 
 
     output  wire [ADDR_WIDTH-1:0] temp_buf_addr,
     output  wire [DATA_WIDTH-1:0] temp_buf_data,
@@ -14,8 +14,8 @@ module temp_buf #(
     output  wire temp_buf_done
 );
 
-// 매크로를 풀어서 직접 언패킹
-wire [31:0] acc_data[0:9]; // 32비트 10개로 변경
+
+wire [31:0] acc_data[0:9]; 
 
 assign acc_data[9] = data_in[31:0];
 assign acc_data[8] = data_in[63:32];
