@@ -44,6 +44,7 @@ module layer2(
         .w_en_o(w2_buf_en),
         .x_addr_o(layer1_buf_addr),
         .x_en_o(layer1_buf_en),
+        .mac_en_o(pu_en2),
         .relu_en_o(relu_en_2),
         .temp_wr_addr_o(temp_wr_addr),
         .temp_wr_en_o(temp_wr_en),

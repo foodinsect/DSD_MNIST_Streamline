@@ -31,6 +31,7 @@ module pu #(
     reg     [3:0] pu_en_delay;
     reg     [3:0] control_delay; 
     reg     [40:0] qdq_result;
+    reg     [(DATA_WIDTH)-1:0]  rounded;
     reg     [(DATA_WIDTH)-1:0]  result;
     reg     [2:0] done_delay;
 
@@ -73,13 +74,13 @@ module pu #(
                 qdq_result <= intermediate_result[(MAC_NUM - 1) - cnt[1]] * COEFF;
             end
             if (control_delay[1]) begin    // Round
-                result <= qdq_result[23:16] + qdq_result[15];
+                rounded <= qdq_result[23:16] + qdq_result[15];
             end
             if (control_delay[2]) begin    // Saturation
-                if (result > 8'h7f) begin
+                if (rounded > 8'h7f) begin
                     result <= 8'h7f;
                 end else begin
-                    result <= result;
+                    result <= rounded;
                 end
             end
         end

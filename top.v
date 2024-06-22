@@ -150,15 +150,17 @@ module top #(
     .done_o(done_5)
     );
     
-    temp_buf temp_buf(
+    temp_buf #(
+        .DATAWIDHT(Y_BUF_DATA_WIDTH),
+        .ADDR_WIDTH(Y_BUF_ADDR_WIDTH)
+    ) temp_buf(
         .clk(clk_i),
         .rst_n(rstn_i),
-        .temp_buf_en(y_buf_en),
         .data_in(do_layer5),
         .buf_wr_start(temp_wr_start),
-        .buf_wr_en(y_buf_wr_en),
         .temp_buf_addr(y_buf_addr),
         .temp_buf_data(y_buf_data),
+        .temp_buf_en(y_buf_wr_en),
         .temp_buf_done(buf_wr_done)
     );
     

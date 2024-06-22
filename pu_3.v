@@ -24,7 +24,6 @@ module pu_3(
             mac MAC_layer5 (
                 .clk_i(clk_i),
                 .rstn_i(rstn_i),
-                .mac_en(en_i),
                 .acc_en(acc_en_delay[1]),
                 .image_data(din_i),
                 .weight_data(win_i[(i+1)*8-1:i*8]),

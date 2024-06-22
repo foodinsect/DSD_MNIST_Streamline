@@ -27,14 +27,10 @@ module top_mlp #(
     output  wire [Y_BUF_DATA_WIDTH-1:0]     y_buf_data
 );
 
-    wire clk_out;
-    /*
-        clock_divider clk_div(
-        .clk_i(clk),
-        .rstn_i(rst_n),
-        .clk_out(clk_out)
-    );
-    */    
+    parameter RBAW = $clog2(IN_IMG_NUM*10);
+    wire    [RBAW-1:0] y_buf_addr_wire;
+    wire    [Y_BUF_ADDR_WIDTH-1:0] y_buf_addr_output = {{(Y_BUF_ADDR_WIDTH - RBAW - 2){1'b0}}, y_buf_addr_wire, 2'b00};
+    assign  y_buf_addr = y_buf_addr_output;
 
     
     top mlp_top(
@@ -45,7 +41,7 @@ module top_mlp #(
         .done_led_o(done_led_o),
         .y_buf_en(y_buf_en),
         .y_buf_wr_en(y_buf_wr_en),
-        .y_buf_addr(y_buf_addr),
+        .y_buf_addr(y_buf_addr_wire),
         .y_buf_data(y_buf_data)
     );
     

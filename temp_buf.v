@@ -8,7 +8,6 @@ module temp_buf #(
     input   wire buf_wr_start,
     input   wire [32*10-1:0] data_in, // 32비트 10개로 변경
 
-    output  reg  buf_wr_en,
     output  wire [ADDR_WIDTH-1:0] temp_buf_addr,
     output  wire [DATA_WIDTH-1:0] temp_buf_data,
     output  wire temp_buf_en,
@@ -62,28 +61,20 @@ assign temp_buf_en = buf_addr_cnt;
 assign temp_buf_addr = buf_addr;
 
 always @(posedge clk) begin
-    if (!rst_n) begin
+    if(!rst_n) begin
         buf_addr_cnt <= 1'b0;
         buf_addr <= {ADDR_WIDTH{1'b0}};
-    end else begin
-        if (buf_wr_start) begin
-            buf_addr_cnt <= 1'b1;
-        end else if (en_pipeline[9]) begin
-            buf_addr_cnt <= 1'b0;
+    end
+    else begin
+        if(buf_wr_start) buf_addr_cnt <=  1'b1;
+        else begin
+            if(en_pipeline[9]) buf_addr_cnt <= 1'b0;
         end
 
-        if (buf_addr_cnt) begin
+        if(buf_addr_cnt) begin
             buf_addr <= buf_addr + {{(ADDR_WIDTH-1){1'b0}}, 1'b1};
         end
     end
 end
 
-// buf_wr_en을 en_pipeline에 따라 설정
-always @(posedge clk) begin
-    if (!rst_n) begin
-        buf_wr_en <= 1'b0;
-    end else begin
-        buf_wr_en <= |en_pipeline + buf_wr_start; // en_pipeline 중 하나라도 1이면 buf_wr_en을 1로 설정
-    end
-end
 endmodule
