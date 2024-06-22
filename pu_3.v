@@ -8,33 +8,40 @@ module pu_3(
     input wire  valid_i,
     input wire  mac_clear,
 
-    input wire signed [7:0]             din_i,         // 맥 갯수 * 8  = 64비트
-    input wire signed [8*10-1:0]        win_i,         // w in 비트수 = 8 = 8비트
+    input wire signed [7:0]             din_i,       
+    input wire signed [8*10-1:0]        win_i,        
     
-    output wire signed [(32*10)-1:0] matmul_o    // 32비트 * 맥갯수 = 256 비트
+    output wire signed [(32*10)-1:0]    data_o   
 );
 
     wire signed [31:0] mac_outputs [10-1:0];
-
+    reg     [1:0] acc_en_delay;
+    
     genvar i;
     generate
         for (i = 0; i < 10; i = i + 1) begin: mac_gen
-
-            // MAC 인스턴스 생성
-            mac2 my_mac (
+            // MAC inst
+            mac MAC_layer5 (
                 .clk_i(clk_i),
                 .rstn_i(rstn_i),
                 .mac_en(en_i),
-                .valid_i(valid_i),
-                .mac_clear(mac_clear),
+                .acc_en(acc_en_delay[1]),
                 .image_data(din_i),
                 .weight_data(win_i[(i+1)*8-1:i*8]),
                 .dsp_output_o(mac_outputs[i])
             );
             
-            assign  matmul_o[i*32 +: 32] = mac_outputs[i];
+            assign  data_o[i*32 +: 32] = mac_outputs[i];
 
          end
     endgenerate
-
+    
+    always @(posedge clk_i) begin
+        if (!rstn_i) begin 
+            acc_en_delay <= 2'b0;
+        end else begin
+            acc_en_delay[0] <= en_i;
+            acc_en_delay[1] <= acc_en_delay[0];
+        end
+    end
 endmodule

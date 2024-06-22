@@ -3,6 +3,7 @@ module local_ctrl_layer3(
 input wire              clk_i,
 input wire              rstn_i,
 input wire              start_i,
+input wire              temp_start_i,
 input wire      [12:0]  cnt,
 
 output wire     [7:0]   w_addr_o,
@@ -12,9 +13,12 @@ output wire             x_en_o,
 
 output wire             mac_en_o,
 output wire             relu_en_o,
+
+output wire     [5:0]   temp_wr_addr_o,
+output wire             temp_wr_en_o,
+output wire             layer2_temp_clear_o,
 output wire             mac_clear,
-output wire             temp_wr_en,
-output wire             temp_wr_en_1,
+
 output wire             done_o
 );
 
@@ -35,9 +39,8 @@ reg             relu;
 reg     [1:0]   relu_delay;
 reg             clear;
 
-reg             temp_wr,temp_wr_1;
-reg     [2:0]   temp_delay;
-reg     [2:0]   temp_delay_1;
+reg             temp_wr_en, layer2_temp_clear;
+reg     [5:0]   temp_wr_addr;
 
 localparam   IDLE    =   3'b000;
 localparam   RUN     =   3'b001;     // half 0~31 
@@ -58,8 +61,9 @@ assign  x_en_o      =   x_en;
 assign  mac_en_o    =   mac_en;
 assign  relu_en_o   =   relu_delay[1];
 
-assign temp_wr_en = temp_delay[2];
-assign temp_wr_en_1 = temp_delay_1[2];
+assign  temp_wr_en_o = temp_wr_en;
+assign  layer2_temp_clear_o = layer2_temp_clear;
+assign  temp_wr_addr_o = temp_wr_addr;
 assign  mac_clear = clear;
 
 //present_state
@@ -159,8 +163,6 @@ always @(posedge clk_i) begin
             clear   <=  0;
             mac_en  <=  0;
             relu   <=  0;
-            temp_wr <=  0;
-            temp_wr_1 <=  0;
         end
         RUN     :   begin
             if (cnt_mac == 64) begin
@@ -220,15 +222,11 @@ always @(posedge clk_i) begin
                 x_en    <=  0;
                 mac_en  <=  0;
                 relu   <=  0;
-                temp_wr <=  0;
             end
             else begin
                 done    <=  0;
                 relu   <=  0;
                 cnt_mac <=  cnt_mac + 1;
-                if (cnt_mac == 3) begin
-                    temp_wr <= 1;
-                end
             end
         end
         RUN_1     :   begin
@@ -289,16 +287,11 @@ always @(posedge clk_i) begin
                 x_en    <=  0;
                 mac_en  <=  0;
                 relu   <=  0;
-                temp_wr <=  0;
-                temp_wr_1 <=  0;
             end
             else begin
                 done    <=  0;
                 relu   <=  0;
                 cnt_mac <=  cnt_mac + 1;
-                if (cnt_mac == 3) begin
-                    temp_wr_1 <=  1;
-                end
             end
         end
         RE      :   begin
@@ -326,8 +319,6 @@ always @(posedge clk_i) begin
             x_en    <=  0;
             mac_en  <=  0;
             relu   <=  0;
-            temp_wr <=  0;
-            temp_wr_1 <=  0;
         end
         default :   begin
             cnt_mac <=  0;
@@ -346,20 +337,38 @@ end
 always @(posedge clk_i or negedge rstn_i) begin
     if (!rstn_i) begin
         relu_delay <= 2'b0;
-        temp_delay <= 4'b0;
     end
     else begin
         relu_delay[0] <= relu;
         relu_delay[1] <= relu_delay[0];
-
-        temp_delay[0] <= temp_wr;
-        temp_delay[1] <= temp_delay[0];
-        temp_delay[2] <= temp_delay[1];
-        temp_delay[3] <= temp_delay[2];
-
-        temp_delay_1[0] <= temp_wr_1;
-        temp_delay_1[1] <= temp_delay_1[0];
-        temp_delay_1[2] <= temp_delay_1[1];
     end
 end
+
+always @(posedge clk_i or negedge rstn_i) begin
+    if (!rstn_i) begin
+        temp_wr_en <= 0;
+        temp_wr_addr <= 0;
+        layer2_temp_clear <= 0;
+    end
+    else begin
+        if(temp_start_i) begin
+            temp_wr_en <= 1;
+        end
+        if (temp_wr_en) begin
+            temp_wr_addr <= temp_wr_addr + 1;
+        end
+        if (temp_wr_addr == 63) begin
+            temp_wr_en <= 0;
+            temp_wr_addr <= 0;
+            layer2_temp_clear <= 1;
+        end
+        else if (temp_wr_addr == 31) begin
+            temp_wr_en <= 0;
+            temp_wr_addr <= temp_wr_addr + 1;
+        end else begin
+            layer2_temp_clear <= 0;
+        end
+    end
+end
+
 endmodule

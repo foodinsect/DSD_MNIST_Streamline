@@ -3,6 +3,7 @@ module local_ctrl_layer1(
 input wire              clk_i,
 input wire              rstn_i,
 input wire              start_i,
+input wire              temp_start_i,
 
 output wire     [9:0]   w_addr_o,
 output wire             w_en_o,
@@ -11,6 +12,9 @@ output wire             x_en_o,
 output wire             mac_en_o,
 output wire             relu_en_o,
 output wire     [12:0]  cnt_o,
+
+output wire     [9:0]   temp_addr_o,
+output wire             temp_wr_en_o,
 output wire             done_o
 );
 
@@ -30,14 +34,15 @@ reg             x_en;
 reg             mac_en;
 reg             relu;
 reg     [1:0]   relu_delay;
-reg             temp_wr;
+
+reg     [9:0]   temp_addr; 
+reg             temp_wr_en;
 
 localparam   IDLE    =   3'b000;
 localparam   RUN     =   3'b001;
 localparam   SAVE    =   3'b011;
 localparam   RE      =   3'b100;
 localparam   DONE    =   3'b101;
-
 
 assign  done_o = done;
 
@@ -49,8 +54,9 @@ assign  x_en_o      =   x_en;
 
 assign  mac_en_o    =   mac_en;
 assign  relu_en_o   =   relu_delay[1];
-
 assign  cnt_o       =   cnt;
+assign  temp_wr_en_o   =   temp_wr_en;
+assign  temp_addr_o    =   temp_addr;
 
 //present_state
 always @(posedge clk_i) begin
@@ -129,7 +135,6 @@ always @(posedge clk_i) begin
             done    <=  0;
             w_addr  <=  0;
             w_en    <=  0;
-            temp_wr <=  0;
             x_addr  <=  0;
             x_en    <=  0;
             mac_en  <=  0;
@@ -194,7 +199,6 @@ always @(posedge clk_i) begin
                 x_en    <=  0;
                 mac_en  <=  0;
                 relu   <=  0;
-                temp_wr <=  0;
             end 
             else begin
                 done    <=  0;
@@ -202,9 +206,6 @@ always @(posedge clk_i) begin
                 cnt    <=  cnt + 1;
                 cnt_mac <=  cnt_mac + 1;
                 
-                if(cnt_mac ==3) begin
-                    temp_wr <=  1;
-                end
             end
         end
         RE      :   begin
@@ -260,5 +261,23 @@ always @(posedge clk_i or negedge rstn_i) begin
     end
 end
 
+always @(posedge clk_i or negedge rstn_i) begin
+    if (!rstn_i) begin
+        temp_wr_en <= 0;
+        temp_addr <= 0;
+    end
+    else begin
+        if(temp_start_i) begin
+            temp_wr_en <= 1;
+        end
+        if (temp_wr_en) begin
+            temp_addr <= temp_addr + 1;
+        end
+        if (temp_addr == 127) begin
+            temp_wr_en <= 0;
+            temp_addr <= 0;
+        end
+    end
+end
 
 endmodule

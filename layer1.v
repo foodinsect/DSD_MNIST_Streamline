@@ -4,10 +4,13 @@ module layer1(
     input   wire                    clk_i,
     input   wire                    rstn_i,
     input   wire                    start_i,
+    input   wire                    temp_rd_en,
+    input   wire    [6:0]           temp_rd_addr,
+    input   wire                    temp_clear,
     
-    output  wire    [128*8-1:0]     do_layer1,
+    output  wire    [7:0]           data_o,
     output  wire    [12:0]          cnt_o,
-    output  wire                    temp_wr_en,
+    output  wire                    pu_done,
     output  wire                    done_o
     );
     
@@ -22,8 +25,10 @@ module layer1(
     wire    [8*128-1:0]     w1_buf_data;
     
     // layer result wire variable
-    
-    wire    pu_en1, relu_en_i;
+    wire    [7:0]           pu_data;
+    wire    [9:0]           temp_wr_addr;
+    wire                    temp_wr_en;
+    wire    pu_en1, relu_en_i, temp_start;
     
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////
@@ -49,6 +54,7 @@ module layer1(
         .clk_i(clk_i),
         .rstn_i(rstn_i),
         .start_i(start_i),
+        .temp_start_i(temp_start),
         .w_addr_o(w1_buf_addr),
         .w_en_o(w1_buf_en),
         .x_addr_o(x_buf_addr),
@@ -56,27 +62,44 @@ module layer1(
         .mac_en_o(pu_en1),
         .relu_en_o(relu_en_i),
         .cnt_o(cnt_o),
+        .temp_wr_en_o(temp_wr_en),
+        .temp_addr_o(temp_wr_addr),
         .done_o(done_o)
     );
     
     pu #(
         .COEFF(17'b0_0000_0000_0010_0110),
         .DATA_WIDTH(8),
-        .MAC_CNT(128)
+        .MAC_NUM(128)
     ) PU_1 (
         .clk_i(clk_i),
         .rstn_i(rstn_i),
         .mac_en_i(pu_en1),
-        .relu_en_i(relu_en_i),    
-        
-        .din_i(din), // 첫 32-bit만 사용
+        .relu_en_i(relu_en_i),
+        .din_i(din), 
         .win_i(w1_buf_data),
-        
-        .done_o(temp_wr_en),
-        .matmul_o(do_layer1)       // 행렬 연산 결과
+        .temp_start(temp_start),
+        .done_o(pu_done),
+        .data_o(pu_data)       
     );
-   
-       
+
+    // Instance of temp_bram
+    temp_bram #(
+        .MAC_CNT(128),
+        .DATA_WIDTH(8)
+    ) layer1_temp_bram (
+        .clk_i(clk_i),
+        .rstn_i(rstn_i),         // layer2 cal done -> clear
+        .rd_temp_en(temp_rd_en),
+        .data_in(pu_data),
+        .clear(temp_clear),
+        
+        .wr_temp_en(temp_wr_en),
+        .temp_wr_addr(temp_wr_addr),
+        .temp_rd_addr(temp_rd_addr),
+        .data_out(data_o)
+    );
+
     single_port_bram  #(
         .WIDTH(8),
         .DEPTH(7840),

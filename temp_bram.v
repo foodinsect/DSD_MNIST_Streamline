@@ -7,10 +7,11 @@ module temp_bram #(
     input wire rstn_i ,
     input wire rd_temp_en,              // Read_enable
     input wire wr_temp_en,
-    input wire [ADDR_WIDTH-1:0] temp_bram_index,
+    input wire [ADDR_WIDTH-1:0] temp_wr_addr,
+    input wire [ADDR_WIDTH-1:0] temp_rd_addr,
     input wire clear,    
     
-    input wire [DATA_WIDTH * MAC_CNT-1:0] data_in,  // Data input (concated data)
+    input wire [DATA_WIDTH-1:0] data_in,  // Data input (concated data)
 
     output reg [DATA_WIDTH-1:0] data_out  // Data output
 );
@@ -26,12 +27,10 @@ module temp_bram #(
             data_out <= {DATA_WIDTH{1'b0}};
         end 
         else if (wr_temp_en) begin
-            for (i = 0; i < MAC_CNT; i = i + 1) begin
-                bram[i] <= data_in[DATA_WIDTH * (MAC_CNT - 1 - i + 1) - 1 -: DATA_WIDTH];
-            end
+            bram[temp_wr_addr] <= data_in;
         end
         else if (rd_temp_en) begin 
-            data_out <= bram[temp_bram_index]; 
+            data_out <= bram[temp_rd_addr]; 
         end else if (clear) begin
             for (i = 0; i < MAC_CNT; i = i + 1) begin
                 bram[i] <= {DATA_WIDTH{1'b0}};
