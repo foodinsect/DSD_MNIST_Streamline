@@ -31,8 +31,8 @@ assign acc_data[0] = data_in[319:288];
 integer i;
 reg [9:0] en_pipeline;
 reg [31:0] y_data_buffer[0:9];
-assign temp_buf_data = y_data_buffer[0];
-assign temp_buf_done = en_pipeline[9];
+reg buf_addr_cnt;
+reg [ADDR_WIDTH-1:0] buf_addr;
 
 always @(posedge clk) begin
     if (!rst_n) begin
@@ -54,12 +54,6 @@ always @(posedge clk) begin
     end
 end
 
-reg buf_addr_cnt;
-reg [ADDR_WIDTH-1:0] buf_addr;
-
-assign temp_buf_en = buf_addr_cnt;
-assign temp_buf_addr = buf_addr;
-
 always @(posedge clk) begin
     if(!rst_n) begin
         buf_addr_cnt <= 1'b0;
@@ -76,5 +70,10 @@ always @(posedge clk) begin
         end
     end
 end
+
+assign temp_buf_en = buf_addr_cnt;
+assign temp_buf_addr = buf_addr;
+assign temp_buf_data = y_data_buffer[0];
+assign temp_buf_done = (buf_addr == 100'd99) ? 1'b1 : 1'b0 ;
 
 endmodule

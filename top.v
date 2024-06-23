@@ -43,22 +43,9 @@ module top #(
     wire    [4:0]           layer4_buf_addr;
     wire    [32*10-1:0]     do_layer5;
 
-    wire    buf_wr_done;
+    wire    buf_wr_done, sw_pdet;
     
-    /*
-        INPUT SWITCH PEDGE DETECTOR
-    */
-    reg     [2:0]   sw_syncchain;
-    wire            sw_pdet = ~sw_syncchain[2] & sw_syncchain[1];
-    always @(posedge clk_i) begin
-        if(!rstn_i) sw_syncchain <= 3'b000;
-        else begin
-            sw_syncchain[2:1] <= sw_syncchain[1:0];
-            sw_syncchain[0] <= start_i;
-        end
-    end
 
-    
    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
    //////////////////////////////////
    ///////////////   BRAM inst
@@ -151,7 +138,7 @@ module top #(
     );
     
     temp_buf #(
-        .DATA_WIDHT(Y_BUF_DATA_WIDTH),
+        .DATA_WIDTH(Y_BUF_DATA_WIDTH),
         .ADDR_WIDTH(Y_BUF_ADDR_WIDTH)
     ) temp_buf(
         .clk(clk_i),
@@ -167,7 +154,9 @@ module top #(
     glbl_ctrl global_ctrl(
         .clk_i(clk_i),
         .rstn_i(rstn_i),
+        .start_i(start_i),
         .buf_wr_done(buf_wr_done),
+        .sw_pdet(sw_pdet),
         .done_intr_o(done_intr_o),
         .done_led_o(done_led_o)
     );
