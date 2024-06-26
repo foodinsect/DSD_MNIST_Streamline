@@ -12,7 +12,8 @@ module top_mlp #(
 	parameter W_BUF_DEPTH = 784*IN_IMG_NUM,
     parameter Y_BUF_DATA_WIDTH = 32,
 	parameter Y_BUF_ADDR_WIDTH = 32,  							// add in 2023-05-10
-    parameter Y_BUF_DEPTH = 10*IN_IMG_NUM * 4 					// modify in 2024-04-17, y_buf_addr has to increase +4 -> 0 - 396
+    parameter Y_BUF_DEPTH = 10*IN_IMG_NUM * 4, 					// modify in 2024-04-17, y_buf_addr has to increase +4 -> 0 - 396
+    parameter RBAW = $clog2(IN_IMG_NUM*10)
 )(
     // system interface
     input   wire                            clk,
@@ -27,7 +28,7 @@ module top_mlp #(
     output  wire [Y_BUF_DATA_WIDTH-1:0]     y_buf_data
 );
 
-    parameter RBAW = $clog2(IN_IMG_NUM*10);
+    
     wire    [RBAW-1:0] y_buf_addr_wire;
     wire    [Y_BUF_ADDR_WIDTH-1:0] y_buf_addr_output = {{(Y_BUF_ADDR_WIDTH - RBAW - 2){1'b0}}, y_buf_addr_wire, 2'b00};
     assign  y_buf_addr = y_buf_addr_output;
