@@ -32,40 +32,40 @@ Layers 2 to 5 have similar components to Layer 1, but each layer is optimized ac
 The simulation results for each layer are as follows:
 
 - **Layer 1 Simulation Result**
-  ![Layer 1 Simulation Result](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/67f731d5-3e20-41be-872b-f48e08a163d2)
+  ![Layer 1 Simulation Result](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/67f731d5-3e20-41be-872b-f48e08a163d2)  
 
 - **Layer 2 Simulation Result**
-  ![Layer 2 Simulation Result](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/e941d5d8-73bb-4a33-94bb-476c08fd1b6e)
+  ![Layer 2 Simulation Result](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/e941d5d8-73bb-4a33-94bb-476c08fd1b6e)  
 
 
 - **Layer 3 Simulation Result**
-  ![Layer 3 Simulation Result](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/b2ff6895-4c90-4464-a0c1-c79903adc4e5)
+  ![Layer 3 Simulation Result](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/b2ff6895-4c90-4464-a0c1-c79903adc4e5)  
 
 
 - **Layer 4 Simulation Result**
-  ![Layer 4 Simulation Result](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/0de6eb5e-0f0c-4d15-a75a-24f69755ea26)
+  ![Layer 4 Simulation Result](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/0de6eb5e-0f0c-4d15-a75a-24f69755ea26)  
 
 
 - **Layer 5 Simulation Result**
 
-  ![Layer 5 Simulation Result](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/e3500e51-acab-46df-a572-3193135fceff)
+  ![Layer 5 Simulation Result](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/e3500e51-acab-46df-a572-3193135fceff)  
 
 ## Implementation Result
 The implementation result is as follows:
 
 - **Implementation Result**
-  ![Implementation Result](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/280ba771-3ee1-4296-99d8-6c36bdcef718)
-  ![Design Run](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/9b2ee61e-3df4-4270-bacc-624995357f33)
+  ![Implementation Result](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/280ba771-3ee1-4296-99d8-6c36bdcef718)  
+  ![Design Run](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/9b2ee61e-3df4-4270-bacc-624995357f33)  
 
 
 ### Utilization
-  ![Utilization Report](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/1616e535-d6db-42ca-ae3c-db84c16137c0)
+  ![Utilization Report](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/1616e535-d6db-42ca-ae3c-db84c16137c0)  
 
 ### Timing
-  ![Timing Report](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/840486d9-8e1f-4b25-bf01-38d22d7a9c62)
+  ![Timing Report](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/840486d9-8e1f-4b25-bf01-38d22d7a9c62)  
 
 ### Power
-  ![Power Report](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/f84f75c3-3c72-48d3-a2ee-59e55c9a3cfb)
+  ![Power Report](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/f84f75c3-3c72-48d3-a2ee-59e55c9a3cfb)  
 
 
 ## Conclusion
