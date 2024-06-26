@@ -2,6 +2,7 @@
 
 ## Project Overview
 The DSD_MNIST_Streamline project aims to design and implement a digital signal processing system utilizing the MNIST dataset. This project consists of 5 layers, with each layer structured with `local_ctrl`, `PU`, and `temp_bram` components.
+**Board** : Zybo z7-20  
 
 ## Project Structure
 The project is composed of the following five layers:
