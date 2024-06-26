@@ -53,7 +53,7 @@ The simulation results for each layer are as follows:
 ## Implementation Result
 The implementation result is as follows:
 
-- **Implementation Result**
+- **Implementation Result**  
   ![Implementation Result](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/280ba771-3ee1-4296-99d8-6c36bdcef718)  
   ![Design Run](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/9b2ee61e-3df4-4270-bacc-624995357f33)  
 
