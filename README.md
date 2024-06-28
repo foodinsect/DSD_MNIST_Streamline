@@ -12,6 +12,8 @@ The project is composed of the following five layers:
 3. **Layer 3**
 4. **Layer 4**
 5. **Layer 5**
+   
+![structure](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/66abef42-3ffe-4019-8afe-3fda8ddbd30b)  
 
 Each layer contains the following components:
 
