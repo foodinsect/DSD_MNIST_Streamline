@@ -103,7 +103,7 @@ module layer1(
     single_port_bram  #(
         .WIDTH(8),
         .DEPTH(7840),
-        .INIT_FILE("C:/try2/INT8_input_image_hex.txt")
+        .INIT_FILE("C:/data/INT8_input_image_hex.txt")
     ) x_buf (
         .clk(clk_i),
         .en(x_buf_en),
@@ -116,7 +116,7 @@ module layer1(
     single_port_bram  #(
         .WIDTH(1024),       // 8*128
         .DEPTH(784),
-        .INIT_FILE("C:/try2/int8_layer1_hex_re.txt")
+        .INIT_FILE("C:/data/int8_layer1_hex_re.txt")
     ) w1_buf (
         .clk(clk_i),
         .en(w1_buf_en),

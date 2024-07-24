@@ -90,7 +90,7 @@ module layer3(
     single_port_bram  #(
         .WIDTH(256),       // 8*32
         .DEPTH(128),
-        .INIT_FILE("C:/try2/w3_buffer.txt")
+        .INIT_FILE("C:/data/w3_buffer.txt")
     ) w3_buf (
         .clk(clk_i),
         .en(w3_buf_en),

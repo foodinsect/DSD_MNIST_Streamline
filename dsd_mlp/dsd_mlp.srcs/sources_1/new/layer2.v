@@ -92,7 +92,7 @@ module layer2(
     single_port_bram  #(
         .WIDTH(256),       // 8*32
         .DEPTH(256),
-        .INIT_FILE("C:/try2/w2_buffer.txt")
+        .INIT_FILE("C:/data/w2_buffer.txt")
     ) w2_buf (
         .clk(clk_i),
         .en(w2_buf_en),

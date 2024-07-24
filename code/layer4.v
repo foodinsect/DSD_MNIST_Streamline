@@ -31,7 +31,8 @@ module layer4(
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////
     ///////////////     LAYER 4
-   local_ctrl_layer4 layer4_ctrl(
+
+    local_ctrl_layer4 layer4_ctrl(
         .clk_i(clk_i),
         .rstn_i(rstn_i),
         .start_i(start_i),
@@ -65,11 +66,11 @@ module layer4(
         .mac_en_i(pu_en4),
         .relu_en_i(relu_en_4),
         
-        .din_i(layer3_data), // Ã¹ 32-bitï¿½ï¿½ ï¿½ï¿½ï¿??
+        .din_i(layer3_data), 
         .win_i(w4_buf_data),
         
         
-        .data_o(pu_data)       // ï¿½ï¿½ï¿?? ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿??
+        .data_o(pu_data)      
     );
    
     // Instance of temp_bram
@@ -92,7 +93,7 @@ module layer4(
     single_port_bram  #(
         .WIDTH(128),       // 8*16
         .DEPTH(128),
-        .INIT_FILE("C:/try2/w4_buffer.txt")
+        .INIT_FILE("C:/data/w4_buffer.txt")
     ) w4_buf (
         .clk(clk_i),
         .en(w4_buf_en),

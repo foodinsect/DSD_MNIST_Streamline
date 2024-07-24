@@ -58,7 +58,7 @@ module layer5(
     single_port_bram  #(
         .WIDTH(80),         // 8 * 10
         .DEPTH(32),
-        .INIT_FILE("C:/try2/w5_buffer.txt")
+        .INIT_FILE("C:/data/w5_buffer.txt")
     ) w5_buf (
         .clk(clk_i),
         .en(w5_buf_en),
