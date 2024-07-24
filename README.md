@@ -85,4 +85,4 @@ For additional inquiries, please contact us at:
 
 - Email: opqrs0422@naver.com
 - GitHub: [GitHub Profile](https://github.com/foodinsect)
->>>>>>> ebdf2a67563023895fd77cb4233962ba9ec76bab
+
