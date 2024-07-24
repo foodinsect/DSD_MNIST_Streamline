@@ -1,11 +1,14 @@
-<<<<<<< HEAD
-# DSD_MNIST_Streamline
-=======
 # 💡 DSD_MNIST_Streamline 💡
 
 ## Project Overview
-The DSD_MNIST_Streamline project aims to design and implement a digital signal processing system utilizing the MNIST dataset. This project consists of 5 layers, with each layer structured with `local_ctrl`, `PU`, and `temp_bram` components.
+The DSD_MNIST_Streamline project aims to design and implement a digital signal processing system utilizing the MNIST dataset. This project consists of 5 layers, with each layer structured with `local_ctrl`, `PU`, and `temp_bram` components.  
+
 **Board** : Zybo z7-20  
+
+## Project Result (SDK)
+![SDK Result](https://github.com/user-attachments/assets/3c811e3e-9c71-4031-afe1-f4d2a02d3c09)
+  
+**Accuracy**: 100%  
 
 ## Project Structure
 The project is composed of the following five layers:
