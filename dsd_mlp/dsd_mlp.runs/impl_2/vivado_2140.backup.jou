@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jul 24 18:46:08 2024
+# Process ID: 2140
+# Current directory: C:/DSD_Streamline_try/dsd_mlp.runs/impl_2
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: C:/DSD_Streamline_try/dsd_mlp.runs/impl_2/design_1_wrapper.vdi
+# Journal file: C:/DSD_Streamline_try/dsd_mlp.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

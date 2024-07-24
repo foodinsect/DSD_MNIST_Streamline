@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_mlp_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_top_mlp" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="438000000fs"></ZoomStartTime>
+      <ZoomEndTime time="17298000001fs"></ZoomEndTime>
+      <Cursor1Time time="9018000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="214"></NameColumnWidth>
+      <ValueColumnWidth column_width="93"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="89" />
+   <wave_markers>
+      <marker time="1902017000" label="" />
+      <marker time="2172000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/tb_top_mlp/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/done_intr_o" type="logic">
+      <obj_property name="ElementShortName">done_intr_o</obj_property>
+      <obj_property name="ObjectShortName">done_intr_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/done_led_o" type="logic">
+      <obj_property name="ElementShortName">done_led_o</obj_property>
+      <obj_property name="ObjectShortName">done_led_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/y_buf_en" type="logic">
+      <obj_property name="ElementShortName">y_buf_en</obj_property>
+      <obj_property name="ObjectShortName">y_buf_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/y_buf_wr_en" type="logic">
+      <obj_property name="ElementShortName">y_buf_wr_en</obj_property>
+      <obj_property name="ObjectShortName">y_buf_wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/y_buf_addr" type="array">
+      <obj_property name="ElementShortName">y_buf_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y_buf_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/y_buf_data" type="array">
+      <obj_property name="ElementShortName">y_buf_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y_buf_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider309">
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/outbuf" type="array">
+      <obj_property name="ElementShortName">outbuf[0:99][31:0]</obj_property>
+      <obj_property name="ObjectShortName">outbuf[0:99][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/outbuf_we" type="logic">
+      <obj_property name="ElementShortName">outbuf_we</obj_property>
+      <obj_property name="ObjectShortName">outbuf_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/outbuf_addr" type="array">
+      <obj_property name="ElementShortName">outbuf_addr[6:0]</obj_property>
+      <obj_property name="ObjectShortName">outbuf_addr[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/outbuf_data" type="array">
+      <obj_property name="ElementShortName">outbuf_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outbuf_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/IMGNUM" type="array">
+      <obj_property name="ElementShortName">IMGNUM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IMGNUM[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/output_addr_width" type="array">
+      <obj_property name="ElementShortName">output_addr_width[31:0]</obj_property>
+      <obj_property name="ObjectShortName">output_addr_width[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/x_buf/dout" type="array">
+      <obj_property name="ElementShortName">dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/w1_buf/dout" type="array">
+      <obj_property name="ElementShortName">dout[1023:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[1023:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider94">
+      <obj_property name="label">LAYER1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/COEFF" type="array">
+      <obj_property name="ElementShortName">COEFF[16:0]</obj_property>
+      <obj_property name="ObjectShortName">COEFF[16:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[127].MAC_layer1 /relu_en" type="logic">
+      <obj_property name="ElementShortName">relu_en</obj_property>
+      <obj_property name="ObjectShortName">relu_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/mac_outputs" type="array">
+      <obj_property name="ElementShortName">mac_outputs[127:0][23:0]</obj_property>
+      <obj_property name="ObjectShortName">mac_outputs[127:0][23:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/intermediate_result" type="array">
+      <obj_property name="ElementShortName">intermediate_result[127:0][23:0]</obj_property>
+      <obj_property name="ObjectShortName">intermediate_result[127:0][23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group280" type="group">
+      <obj_property name="label">MAC for debug</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group128" type="group">
+         <obj_property name="label">MAC127</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[127].MAC_layer1 /op1" type="array">
+            <obj_property name="ElementShortName">op1[7:0]</obj_property>
+            <obj_property name="ObjectShortName">op1[7:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[127].MAC_layer1 /op2" type="array">
+            <obj_property name="ElementShortName">op2[7:0]</obj_property>
+            <obj_property name="ObjectShortName">op2[7:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[127].MAC_layer1 /mul" type="array">
+            <obj_property name="ElementShortName">mul[40:0]</obj_property>
+            <obj_property name="ObjectShortName">mul[40:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[127].MAC_layer1 /acc" type="array">
+            <obj_property name="ElementShortName">acc[40:0]</obj_property>
+            <obj_property name="ObjectShortName">acc[40:0]</obj_property>
+            <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[127].MAC_layer1 /dsp_output_o" type="array">
+            <obj_property name="ElementShortName">dsp_output_o[31:0]</obj_property>
+            <obj_property name="ObjectShortName">dsp_output_o[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group142" type="group">
+         <obj_property name="label">MAC 126</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[126].MAC_layer1 /op1" type="array">
+            <obj_property name="ElementShortName">op1[7:0]</obj_property>
+            <obj_property name="ObjectShortName">op1[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[126].MAC_layer1 /op2" type="array">
+            <obj_property name="ElementShortName">op2[7:0]</obj_property>
+            <obj_property name="ObjectShortName">op2[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[126].MAC_layer1 /mul" type="array">
+            <obj_property name="ElementShortName">mul[40:0]</obj_property>
+            <obj_property name="ObjectShortName">mul[40:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[126].MAC_layer1 /acc" type="array">
+            <obj_property name="ElementShortName">acc[40:0]</obj_property>
+            <obj_property name="ObjectShortName">acc[40:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[126].MAC_layer1 /dsp_output_o" type="array">
+            <obj_property name="ElementShortName">dsp_output_o[31:0]</obj_property>
+            <obj_property name="ObjectShortName">dsp_output_o[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group135" type="group">
+         <obj_property name="label">MAC 125</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[125].MAC_layer1 /op1" type="array">
+            <obj_property name="ElementShortName">op1[7:0]</obj_property>
+            <obj_property name="ObjectShortName">op1[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[125].MAC_layer1 /op2" type="array">
+            <obj_property name="ElementShortName">op2[7:0]</obj_property>
+            <obj_property name="ObjectShortName">op2[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[125].MAC_layer1 /mul" type="array">
+            <obj_property name="ElementShortName">mul[40:0]</obj_property>
+            <obj_property name="ObjectShortName">mul[40:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[125].MAC_layer1 /acc" type="array">
+            <obj_property name="ElementShortName">acc[40:0]</obj_property>
+            <obj_property name="ObjectShortName">acc[40:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[125].MAC_layer1 /dsp_output_o" type="array">
+            <obj_property name="ElementShortName">dsp_output_o[31:0]</obj_property>
+            <obj_property name="ObjectShortName">dsp_output_o[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group149" type="group">
+         <obj_property name="label">MAC 124</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[124].MAC_layer1 /op1" type="array">
+            <obj_property name="ElementShortName">op1[7:0]</obj_property>
+            <obj_property name="ObjectShortName">op1[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[124].MAC_layer1 /op2" type="array">
+            <obj_property name="ElementShortName">op2[7:0]</obj_property>
+            <obj_property name="ObjectShortName">op2[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[124].MAC_layer1 /mul" type="array">
+            <obj_property name="ElementShortName">mul[40:0]</obj_property>
+            <obj_property name="ObjectShortName">mul[40:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[124].MAC_layer1 /acc" type="array">
+            <obj_property name="ElementShortName">acc[40:0]</obj_property>
+            <obj_property name="ObjectShortName">acc[40:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[124].MAC_layer1 /dsp_output_o" type="array">
+            <obj_property name="ElementShortName">dsp_output_o[31:0]</obj_property>
+            <obj_property name="ObjectShortName">dsp_output_o[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/prcss_en" type="logic">
+      <obj_property name="ElementShortName">prcss_en</obj_property>
+      <obj_property name="ObjectShortName">prcss_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[0:1][6:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[0:1][6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/PU_1/result" type="array">
+      <obj_property name="ElementShortName">result[7:0]</obj_property>
+      <obj_property name="ObjectShortName">result[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="group101" type="group">
+      <obj_property name="label">temp_bram</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/layer1_temp_bram/temp_wr_addr" type="array">
+         <obj_property name="ElementShortName">temp_wr_addr[6:0]</obj_property>
+         <obj_property name="ObjectShortName">temp_wr_addr[6:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/layer1_temp_bram/temp_rd_addr" type="array">
+         <obj_property name="ElementShortName">temp_rd_addr[6:0]</obj_property>
+         <obj_property name="ObjectShortName">temp_rd_addr[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/layer1_temp_bram/rd_temp_en" type="logic">
+         <obj_property name="ElementShortName">rd_temp_en</obj_property>
+         <obj_property name="ObjectShortName">rd_temp_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/layer1_temp_bram/wr_temp_en" type="logic">
+         <obj_property name="ElementShortName">wr_temp_en</obj_property>
+         <obj_property name="ObjectShortName">wr_temp_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/layer1_temp_bram/clear" type="logic">
+         <obj_property name="ElementShortName">clear</obj_property>
+         <obj_property name="ObjectShortName">clear</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/layer1_temp_bram/data_in" type="array">
+         <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/layer1_temp_bram/data_out" type="array">
+         <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer1_inst/layer1_temp_bram/bram" type="array">
+         <obj_property name="ElementShortName">bram[0:127][7:0]</obj_property>
+         <obj_property name="ObjectShortName">bram[0:127][7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider94">
+      <obj_property name="label">LAYER2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/layer2_ctrl/start_i" type="logic">
+      <obj_property name="ElementShortName">start_i</obj_property>
+      <obj_property name="ObjectShortName">start_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/layer2_ctrl/w_en" type="logic">
+      <obj_property name="ElementShortName">w_en</obj_property>
+      <obj_property name="ObjectShortName">w_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/layer2_ctrl/mac_en" type="logic">
+      <obj_property name="ElementShortName">mac_en</obj_property>
+      <obj_property name="ObjectShortName">mac_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/COEFF" type="array">
+      <obj_property name="ElementShortName">COEFF[16:0]</obj_property>
+      <obj_property name="ObjectShortName">COEFF[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/mac_en_i" type="logic">
+      <obj_property name="ElementShortName">mac_en_i</obj_property>
+      <obj_property name="ObjectShortName">mac_en_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/relu_en_i" type="logic">
+      <obj_property name="ElementShortName">relu_en_i</obj_property>
+      <obj_property name="ObjectShortName">relu_en_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/din_i" type="array">
+      <obj_property name="ElementShortName">din_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din_i[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/win_i" type="array">
+      <obj_property name="ElementShortName">win_i[255:0]</obj_property>
+      <obj_property name="ObjectShortName">win_i[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/mac_outputs" type="array">
+      <obj_property name="ElementShortName">mac_outputs[31:0][23:0]</obj_property>
+      <obj_property name="ObjectShortName">mac_outputs[31:0][23:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/intermediate_result" type="array">
+      <obj_property name="ElementShortName">intermediate_result[31:0][23:0]</obj_property>
+      <obj_property name="ObjectShortName">intermediate_result[31:0][23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/prcss_en" type="logic">
+      <obj_property name="ElementShortName">prcss_en</obj_property>
+      <obj_property name="ObjectShortName">prcss_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/pu_en_delay" type="array">
+      <obj_property name="ElementShortName">pu_en_delay[3:0]</obj_property>
+      <obj_property name="ObjectShortName">pu_en_delay[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/control_delay" type="array">
+      <obj_property name="ElementShortName">control_delay[3:0]</obj_property>
+      <obj_property name="ObjectShortName">control_delay[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[0:1][6:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[0:1][6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/rounded" type="array">
+      <obj_property name="ElementShortName">rounded[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rounded[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/result" type="array">
+      <obj_property name="ElementShortName">result[7:0]</obj_property>
+      <obj_property name="ObjectShortName">result[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/data_o" type="array">
+      <obj_property name="ElementShortName">data_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_o[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group278" type="group">
+      <obj_property name="label">mac</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/\mac_gen[31].MAC_layer1 /mac_clear" type="logic">
+         <obj_property name="ElementShortName">mac_clear</obj_property>
+         <obj_property name="ObjectShortName">mac_clear</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/\mac_gen[31].MAC_layer1 /op1" type="array">
+         <obj_property name="ElementShortName">op1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">op1[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/\mac_gen[31].MAC_layer1 /op2" type="array">
+         <obj_property name="ElementShortName">op2[7:0]</obj_property>
+         <obj_property name="ObjectShortName">op2[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/\mac_gen[31].MAC_layer1 /mul" type="array">
+         <obj_property name="ElementShortName">mul[40:0]</obj_property>
+         <obj_property name="ObjectShortName">mul[40:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/\mac_gen[31].MAC_layer1 /acc" type="array">
+         <obj_property name="ElementShortName">acc[40:0]</obj_property>
+         <obj_property name="ObjectShortName">acc[40:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group334" type="group">
+      <obj_property name="label">3</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/\mac_gen[29].MAC_layer1 /op1" type="array">
+         <obj_property name="ElementShortName">op1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">op1[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/\mac_gen[29].MAC_layer1 /op2" type="array">
+         <obj_property name="ElementShortName">op2[7:0]</obj_property>
+         <obj_property name="ObjectShortName">op2[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/\mac_gen[29].MAC_layer1 /mul" type="array">
+         <obj_property name="ElementShortName">mul[40:0]</obj_property>
+         <obj_property name="ObjectShortName">mul[40:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/\mac_gen[29].MAC_layer1 /acc" type="array">
+         <obj_property name="ElementShortName">acc[40:0]</obj_property>
+         <obj_property name="ObjectShortName">acc[40:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group335" type="group">
+      <obj_property name="label">6</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/\mac_gen[26].MAC_layer1 /image_data" type="array">
+         <obj_property name="ElementShortName">image_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">image_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/\mac_gen[26].MAC_layer1 /weight_data" type="array">
+         <obj_property name="ElementShortName">weight_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">weight_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/\mac_gen[26].MAC_layer1 /dsp_output_o" type="array">
+         <obj_property name="ElementShortName">dsp_output_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dsp_output_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/\mac_gen[26].MAC_layer1 /op1" type="array">
+         <obj_property name="ElementShortName">op1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">op1[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/\mac_gen[26].MAC_layer1 /op2" type="array">
+         <obj_property name="ElementShortName">op2[7:0]</obj_property>
+         <obj_property name="ObjectShortName">op2[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/\mac_gen[26].MAC_layer1 /mul" type="array">
+         <obj_property name="ElementShortName">mul[40:0]</obj_property>
+         <obj_property name="ObjectShortName">mul[40:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/PU_2/\mac_gen[26].MAC_layer1 /acc" type="array">
+         <obj_property name="ElementShortName">acc[40:0]</obj_property>
+         <obj_property name="ObjectShortName">acc[40:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group271" type="group">
+      <obj_property name="label">temp_bram_2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/layer2_ctrl/layer1_temp_clear_o" type="logic">
+         <obj_property name="ElementShortName">layer1_temp_clear_o</obj_property>
+         <obj_property name="ObjectShortName">layer1_temp_clear_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/layer2_ctrl/temp_start_i" type="logic">
+         <obj_property name="ElementShortName">temp_start_i</obj_property>
+         <obj_property name="ObjectShortName">temp_start_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/temp_wr_addr" type="array">
+         <obj_property name="ElementShortName">temp_wr_addr[5:0]</obj_property>
+         <obj_property name="ObjectShortName">temp_wr_addr[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/temp_wr_en" type="logic">
+         <obj_property name="ElementShortName">temp_wr_en</obj_property>
+         <obj_property name="ObjectShortName">temp_wr_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/layer2_temp_bram/data_in" type="array">
+         <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/layer2_temp_bram/data_out" type="array">
+         <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer2_inst/layer2_temp_bram/bram" type="array">
+         <obj_property name="ElementShortName">bram[0:63][7:0]</obj_property>
+         <obj_property name="ObjectShortName">bram[0:63][7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider94">
+      <obj_property name="label">LAYER3</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/PU_3/COEFF" type="array">
+      <obj_property name="ElementShortName">COEFF[16:0]</obj_property>
+      <obj_property name="ObjectShortName">COEFF[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/layer3_ctrl/layer2_temp_clear_o" type="logic">
+      <obj_property name="ElementShortName">layer2_temp_clear_o</obj_property>
+      <obj_property name="ObjectShortName">layer2_temp_clear_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/layer3_ctrl/start_i" type="logic">
+      <obj_property name="ElementShortName">start_i</obj_property>
+      <obj_property name="ObjectShortName">start_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/layer3_ctrl/mac_en_o" type="logic">
+      <obj_property name="ElementShortName">mac_en_o</obj_property>
+      <obj_property name="ObjectShortName">mac_en_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/PU_3/mac_en_i" type="logic">
+      <obj_property name="ElementShortName">mac_en_i</obj_property>
+      <obj_property name="ObjectShortName">mac_en_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/PU_3/relu_en_i" type="logic">
+      <obj_property name="ElementShortName">relu_en_i</obj_property>
+      <obj_property name="ObjectShortName">relu_en_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/PU_3/din_i" type="array">
+      <obj_property name="ElementShortName">din_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din_i[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/PU_3/win_i" type="array">
+      <obj_property name="ElementShortName">win_i[255:0]</obj_property>
+      <obj_property name="ObjectShortName">win_i[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/PU_3/mac_outputs" type="array">
+      <obj_property name="ElementShortName">mac_outputs[31:0][23:0]</obj_property>
+      <obj_property name="ObjectShortName">mac_outputs[31:0][23:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/PU_3/intermediate_result" type="array">
+      <obj_property name="ElementShortName">intermediate_result[31:0][23:0]</obj_property>
+      <obj_property name="ObjectShortName">intermediate_result[31:0][23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/PU_3/qdq_result" type="array">
+      <obj_property name="ElementShortName">qdq_result[40:0]</obj_property>
+      <obj_property name="ObjectShortName">qdq_result[40:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/PU_3/rounded" type="array">
+      <obj_property name="ElementShortName">rounded[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rounded[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/PU_3/result" type="array">
+      <obj_property name="ElementShortName">result[7:0]</obj_property>
+      <obj_property name="ObjectShortName">result[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group528" type="group">
+      <obj_property name="label">New Group 28</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/PU_3/\mac_gen[30].MAC_layer1 /op2" type="array">
+         <obj_property name="ElementShortName">op2[7:0]</obj_property>
+         <obj_property name="ObjectShortName">op2[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/PU_3/\mac_gen[30].MAC_layer1 /op1" type="array">
+         <obj_property name="ElementShortName">op1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">op1[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/PU_3/\mac_gen[30].MAC_layer1 /mul" type="array">
+         <obj_property name="ElementShortName">mul[40:0]</obj_property>
+         <obj_property name="ObjectShortName">mul[40:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/PU_3/\mac_gen[30].MAC_layer1 /acc" type="array">
+         <obj_property name="ElementShortName">acc[40:0]</obj_property>
+         <obj_property name="ObjectShortName">acc[40:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group514" type="group">
+      <obj_property name="label">bram</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/layer3_temp_bram/rd_temp_en" type="logic">
+         <obj_property name="ElementShortName">rd_temp_en</obj_property>
+         <obj_property name="ObjectShortName">rd_temp_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/layer3_temp_bram/temp_rd_addr" type="array">
+         <obj_property name="ElementShortName">temp_rd_addr[5:0]</obj_property>
+         <obj_property name="ObjectShortName">temp_rd_addr[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/layer3_temp_bram/data_in" type="array">
+         <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/layer3_temp_bram/data_out" type="array">
+         <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer3_inst/layer3_temp_bram/bram" type="array">
+         <obj_property name="ElementShortName">bram[0:63][7:0]</obj_property>
+         <obj_property name="ObjectShortName">bram[0:63][7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider94">
+      <obj_property name="label">LAYER4</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer4_inst/PU_4/COEFF" type="array">
+      <obj_property name="ElementShortName">COEFF[16:0]</obj_property>
+      <obj_property name="ObjectShortName">COEFF[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer4_inst/PU_4/mac_en_i" type="logic">
+      <obj_property name="ElementShortName">mac_en_i</obj_property>
+      <obj_property name="ObjectShortName">mac_en_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer4_inst/PU_4/relu_en_i" type="logic">
+      <obj_property name="ElementShortName">relu_en_i</obj_property>
+      <obj_property name="ObjectShortName">relu_en_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer4_inst/PU_4/din_i" type="array">
+      <obj_property name="ElementShortName">din_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din_i[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer4_inst/PU_4/win_i" type="array">
+      <obj_property name="ElementShortName">win_i[127:0]</obj_property>
+      <obj_property name="ObjectShortName">win_i[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer4_inst/PU_4/mac_outputs" type="array">
+      <obj_property name="ElementShortName">mac_outputs[15:0][23:0]</obj_property>
+      <obj_property name="ObjectShortName">mac_outputs[15:0][23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer4_inst/PU_4/intermediate_result" type="array">
+      <obj_property name="ElementShortName">intermediate_result[15:0][23:0]</obj_property>
+      <obj_property name="ObjectShortName">intermediate_result[15:0][23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer4_inst/PU_4/qdq_result" type="array">
+      <obj_property name="ElementShortName">qdq_result[40:0]</obj_property>
+      <obj_property name="ObjectShortName">qdq_result[40:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer4_inst/PU_4/rounded" type="array">
+      <obj_property name="ElementShortName">rounded[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rounded[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer4_inst/PU_4/result" type="array">
+      <obj_property name="ElementShortName">result[7:0]</obj_property>
+      <obj_property name="ObjectShortName">result[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group333" type="group">
+      <obj_property name="label">temp bram 4</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider94">
+      <obj_property name="label">LAYER5</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer5_inst/PU_5/en_i" type="logic">
+      <obj_property name="ElementShortName">en_i</obj_property>
+      <obj_property name="ObjectShortName">en_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer5_inst/PU_5/valid_i" type="logic">
+      <obj_property name="ElementShortName">valid_i</obj_property>
+      <obj_property name="ObjectShortName">valid_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer5_inst/PU_5/mac_clear" type="logic">
+      <obj_property name="ElementShortName">mac_clear</obj_property>
+      <obj_property name="ObjectShortName">mac_clear</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer5_inst/PU_5/din_i" type="array">
+      <obj_property name="ElementShortName">din_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din_i[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer5_inst/PU_5/win_i" type="array">
+      <obj_property name="ElementShortName">win_i[79:0]</obj_property>
+      <obj_property name="ObjectShortName">win_i[79:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer5_inst/PU_5/data_o" type="array">
+      <obj_property name="ElementShortName">data_o[319:0]</obj_property>
+      <obj_property name="ObjectShortName">data_o[319:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer5_inst/PU_5/mac_outputs" type="array">
+      <obj_property name="ElementShortName">mac_outputs[9:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">mac_outputs[9:0][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_top_mlp/dut/layer5_inst/PU_5/mac_outputs[9]" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[9][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="label">0</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer5_inst/PU_5/mac_outputs[8]" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[8][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="label">1</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer5_inst/PU_5/mac_outputs[7]" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="label">2</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer5_inst/PU_5/mac_outputs[6]" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[6][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="label">3</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer5_inst/PU_5/mac_outputs[5]" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[5][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="label">4</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer5_inst/PU_5/mac_outputs[4]" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[4][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="label">5</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer5_inst/PU_5/mac_outputs[3]" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="label">6</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer5_inst/PU_5/mac_outputs[2]" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[2][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="label">7</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer5_inst/PU_5/mac_outputs[1]" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="label">8</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer5_inst/PU_5/mac_outputs[0]" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="label">9</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_top_mlp/dut/layer5_inst/PU_5/mac_outputs" type="array">
+      <obj_property name="ElementShortName">mac_outputs[9:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">mac_outputs[9:0][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="group474" type="group">
+      <obj_property name="label">MAC for debug</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top_mlp/dut/layer5_inst/PU_5/din_i" type="array">
+         <obj_property name="ElementShortName">din_i[7:0]</obj_property>
+         <obj_property name="ObjectShortName">din_i[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/layer5_inst/PU_5/win_i" type="array">
+         <obj_property name="ElementShortName">win_i[79:0]</obj_property>
+         <obj_property name="ObjectShortName">win_i[79:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group337" type="group">
+      <obj_property name="label">temp_buf</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_top_mlp/dut/temp_buf/buf_wr_start" type="logic">
+         <obj_property name="ElementShortName">buf_wr_start</obj_property>
+         <obj_property name="ObjectShortName">buf_wr_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/temp_buf/data_in" type="array">
+         <obj_property name="ElementShortName">data_in[319:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[319:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/temp_buf/en_pipeline" type="array">
+         <obj_property name="ElementShortName">en_pipeline[9:0]</obj_property>
+         <obj_property name="ObjectShortName">en_pipeline[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/temp_buf/temp_buf_data" type="array">
+         <obj_property name="ElementShortName">temp_buf_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">temp_buf_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_mlp/dut/temp_buf/acc_data" type="array">
+         <obj_property name="ElementShortName">acc_data[0:9][31:0]</obj_property>
+         <obj_property name="ObjectShortName">acc_data[0:9][31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

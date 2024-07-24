@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Jun 23 04:03:54 2024
+# Process ID: 22716
+# Current directory: C:/DSD_Streamline_try
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35580 C:\DSD_Streamline_try\dsd_mlp.xpr
+# Log file: C:/DSD_Streamline_try/vivado.log
+# Journal file: C:/DSD_Streamline_try\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DSD_Streamline_try/dsd_mlp.xpr
+INFO: [Project 1-313] Project file moved from 'C:/DSD_Streamline _try' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/DSD_Streamline_try/tb_pu_behav.wcfg', nor could it be found using path 'C:/DSD_Streamline _try/tb_pu_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 805.273 ; gain = 226.590
+update_compile_order -fileset sources_1
+file mkdir C:/DSD_Streamline_try/dsd_mlp.sdk
+file copy -force C:/DSD_Streamline_try/dsd_mlp.runs/impl_2/design_1_wrapper.sysdef C:/DSD_Streamline_try/dsd_mlp.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/DSD_Streamline_try/dsd_mlp.sdk -hwspec C:/DSD_Streamline_try/dsd_mlp.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/DSD_Streamline_try/dsd_mlp.sdk -hwspec C:/DSD_Streamline_try/dsd_mlp.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 23 04:09:50 2024...

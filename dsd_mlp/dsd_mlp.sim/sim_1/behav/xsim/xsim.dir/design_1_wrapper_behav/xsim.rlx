@@ -1,0 +1,12 @@
+
+{ 
+    crc :  14226738373064105210  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L xlconstant_v1_1_6 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L smartconnect_v1_0 -L axi_bram_ctrl_v4_1_1 -L blk_mem_gen_v8_4_3 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl" , 
+    buildDate : "May 24 2019" , 
+    buildTime : "15:06:07" , 
+    linkCmd : "C:\\Xilinx\\Vivado\\2019.1\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/design_1_wrapper_behav/xsimk.exe\"   \"xsim.dir/design_1_wrapper_behav/obj/xsim_0.win64.obj\" \"xsim.dir/design_1_wrapper_behav/obj/xsim_1.win64.obj\" \"xsim.dir/design_1_wrapper_behav/obj/xsim_2.win64.obj\" \"xsim.dir/design_1_wrapper_behav/obj/xsim_3.win64.obj\" \"xsim.dir/design_1_wrapper_behav/obj/xsim_4.win64.obj\" \"xsim.dir/design_1_wrapper_behav/obj/xsim_5.win64.obj\" \"xsim.dir/design_1_wrapper_behav/obj/xsim_6.win64.obj\" \"xsim.dir/design_1_wrapper_behav/obj/xsim_7.win64.obj\" \"xsim.dir/design_1_wrapper_behav/obj/xsim_8.win64.obj\" \"xsim.dir/design_1_wrapper_behav/obj/xsim_9.win64.obj\" \"xsim.dir/design_1_wrapper_behav/obj/xsim_10.win64.obj\" \"xsim.dir/design_1_wrapper_behav/obj/xsim_11.win64.obj\" \"xsim.dir/design_1_wrapper_behav/obj/xsim_12.win64.obj\" -L\"C:\\Xilinx\\Vivado\\2019.1\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

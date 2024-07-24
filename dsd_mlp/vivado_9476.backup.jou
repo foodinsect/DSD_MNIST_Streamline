@@ -1,0 +1,92 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jun  4 19:24:09 2024
+# Process ID: 9476
+# Current directory: C:/DSD_Streamline_try
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent948 C:\DSD_Streamline_try\dsd_mlp.xpr
+# Log file: C:/DSD_Streamline_try/vivado.log
+# Journal file: C:/DSD_Streamline_try\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DSD_Streamline_try/dsd_mlp.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/DSD_Streamline_try/dsd_mlp.sdk -hwspec C:/DSD_Streamline_try/dsd_mlp.sdk/design_1_wrapper.hdf
+launch_simulation
+open_wave_config C:/DSD_Streamline_try/tb_top_mlp_behav.wcfg
+source tb_top_mlp.tcl
+run 10 us
+run 10 us
+open_run impl_2
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+refresh_design
+close_design
+reset_run synth_1
+update_module_reference design_1_top_mlp_0_0
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+report_ip_status -name ip_status 
+regenerate_bd_layout
+reset_run synth_1
+save_bd_design
+update_module_reference design_1_top_mlp_0_0
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+open_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+file mkdir C:/DSD_Streamline_try/dsd_mlp.sdk
+file copy -force C:/DSD_Streamline_try/dsd_mlp.runs/impl_2/design_1_wrapper.sysdef C:/DSD_Streamline_try/dsd_mlp.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/DSD_Streamline_try/dsd_mlp.sdk -hwspec C:/DSD_Streamline_try/dsd_mlp.sdk/design_1_wrapper.hdf
+report_ip_status -name ip_status 
+relaunch_sim
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:module_ref:top_mlp:1.0 [get_ips  design_1_top_mlp_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_top_mlp_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/DSD_Streamline_try/dsd_mlp.ip_user_files/sim_scripts -ip_user_files_dir C:/DSD_Streamline_try/dsd_mlp.ip_user_files -ipstatic_source_dir C:/DSD_Streamline_try/dsd_mlp.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/DSD_Streamline_try/dsd_mlp.cache/compile_simlib/modelsim} {questa=C:/DSD_Streamline_try/dsd_mlp.cache/compile_simlib/questa} {riviera=C:/DSD_Streamline_try/dsd_mlp.cache/compile_simlib/riviera} {activehdl=C:/DSD_Streamline_try/dsd_mlp.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+regenerate_bd_layout
+update_module_reference design_1_top_mlp_0_0
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+report_ip_status -name ip_status 
+update_module_reference design_1_top_mlp_0_0
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+export_ip_user_files -of_objects  [get_files C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/clock_divider.v] -no_script -reset -force -quiet
+remove_files  C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/clock_divider.v
+file delete -force C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/clock_divider.v
+refresh_design
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+file mkdir C:/DSD_Streamline_try/dsd_mlp.sdk
+file copy -force C:/DSD_Streamline_try/dsd_mlp.runs/impl_2/design_1_wrapper.sysdef C:/DSD_Streamline_try/dsd_mlp.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/DSD_Streamline_try/dsd_mlp.sdk -hwspec C:/DSD_Streamline_try/dsd_mlp.sdk/design_1_wrapper.hdf
+report_ip_status -name ip_status 
+synth_design -rtl -name rtl_1
+current_design impl_2
+file copy -force C:/DSD_Streamline_try/dsd_mlp.runs/impl_2/design_1_wrapper.sysdef C:/DSD_Streamline_try/dsd_mlp.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/DSD_Streamline_try/dsd_mlp.sdk -hwspec C:/DSD_Streamline_try/dsd_mlp.sdk/design_1_wrapper.hdf

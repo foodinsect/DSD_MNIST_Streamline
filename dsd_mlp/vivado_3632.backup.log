@@ -1,0 +1,697 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jul 24 16:00:21 2024
+# Process ID: 3632
+# Current directory: C:/DSD_Streamline_try
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17660 C:\DSD_Streamline_try\dsd_mlp.xpr
+# Log file: C:/DSD_Streamline_try/vivado.log
+# Journal file: C:/DSD_Streamline_try\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DSD_Streamline_try/dsd_mlp.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/DSD_Streamline_try/tb_pu_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 854.516 ; gain = 257.973
+update_compile_order -fileset sources_1
+INFO: [Vivado 12-5457] ref source:C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/ip/ila_0/ila_0.xci
+generate_target Simulation [get_files C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'ila_0'. Target already exists and is up to date.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_mlp_0/done_intr_o(undef) and /processing_system7_0/IRQ_F2P(intr)
+Generating merged BMM file for the design top 'tb_top_mlp'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'tb_top_mlp'...
+Generating merged BMM file for the design top 'tb_top_mlp'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top_mlp' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L smartconnect_v1_0 -L xilinx_vip -prj tb_top_mlp_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/glbl_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layer1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layer2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layer3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layer4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layer5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/local_ctrl_layer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_ctrl_layer1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/local_ctrl_layer2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_ctrl_layer2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/local_ctrl_layer3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_ctrl_layer3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/local_ctrl_layer4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_ctrl_layer4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/local_ctrl_layer5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_ctrl_layer5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/mac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/pu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/pu_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pu_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/single_port_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_port_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/temp_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module temp_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/temp_buf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module temp_buf
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sim_1/new/tb_top_mlp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top_mlp
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim'
+"xelab -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_mlp_behav xil_defaultlib.tb_top_mlp xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_mlp_behav xil_defaultlib.tb_top_mlp xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 32 for port 'y_buf_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sim_1/new/tb_top_mlp.v:31]
+WARNING: [VRFC 10-3091] actual bit length 24 differs from formal bit length 32 for port 'dsp_output_o' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/pu.v:50]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 7 for port 'temp_wr_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer1.v:98]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer3.v:98]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 7 for port 'layer3_buf_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/top.v:127]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 6 for port 'temp_rd_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/top.v:133]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 6 for port 'x_addr_o' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer4.v:43]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'temp_wr_addr_o' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer4.v:49]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'temp_wr_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer4.v:87]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'temp_rd_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer4.v:88]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer5.v:66]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.local_ctrl_layer1
+Compiling module xil_defaultlib.mac
+Compiling module xil_defaultlib.pu(COEFF=17'b0100110)
+Compiling module xil_defaultlib.temp_bram_default
+Compiling module xil_defaultlib.single_port_bram(WIDTH=8,DEPTH=7...
+Compiling module xil_defaultlib.single_port_bram(WIDTH=1024,DEPT...
+Compiling module xil_defaultlib.layer1
+Compiling module xil_defaultlib.local_ctrl_layer2
+Compiling module xil_defaultlib.pu(MAC_NUM=32)
+Compiling module xil_defaultlib.temp_bram(MAC_CNT=64)
+Compiling module xil_defaultlib.single_port_bram(WIDTH=256,DEPTH...
+Compiling module xil_defaultlib.layer2
+Compiling module xil_defaultlib.local_ctrl_layer3
+Compiling module xil_defaultlib.pu(COEFF=17'b0110100001,MAC_NUM=...
+Compiling module xil_defaultlib.single_port_bram(WIDTH=256,DEPTH...
+Compiling module xil_defaultlib.layer3
+Compiling module xil_defaultlib.local_ctrl_layer4
+Compiling module xil_defaultlib.pu(COEFF=17'b0101011111,MAC_NUM=...
+Compiling module xil_defaultlib.temp_bram(MAC_CNT=32)
+Compiling module xil_defaultlib.single_port_bram(WIDTH=128,DEPTH...
+Compiling module xil_defaultlib.layer4
+Compiling module xil_defaultlib.local_ctrl_layer5
+Compiling module xil_defaultlib.pu_3_default
+Compiling module xil_defaultlib.single_port_bram(WIDTH=80,DEPTH=...
+Compiling module xil_defaultlib.layer5
+Compiling module xil_defaultlib.temp_buf(ADDR_WIDTH=32)
+Compiling module xil_defaultlib.glbl_ctrl
+Compiling module xil_defaultlib.top_default
+Compiling module xil_defaultlib.tb_top_mlp
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_mlp_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim/xsim.dir/tb_top_mlp_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jul 24 16:01:29 2024...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 897.164 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/DSD_Streamline_try/tb_pu_behav.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/DSD_Streamline_try/tb_pu_behav.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_mlp_behav -key {Behavioral:sim_1:Functional:tb_top_mlp} -tclbatch {tb_top_mlp.tcl} -protoinst "protoinst_files/bd_48ac.protoinst" -protoinst "protoinst_files/design_1.protoinst" -view {C:/DSD_Streamline_try/tb_top_mlp_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_48ac.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_48ac.protoinst for the following reason(s):
+There are no instances of module "bd_48ac" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+open_wave_config C:/DSD_Streamline_try/tb_top_mlp_behav.wcfg
+WARNING: Simulation object /tb_top_mlp/dut/layer1_inst/PU_1/\mac_gen[127].MAC_layer1 /mac_en was not found in the design.
+WARNING: Simulation object /tb_top_mlp/dut/temp_buf/buf_wr_en was not found in the design.
+source tb_top_mlp.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_mlp_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 989.168 ; gain = 95.148
+run all
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1240.641 ; gain = 238.730
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_mlp_0/done_intr_o(undef) and /processing_system7_0/IRQ_F2P(intr)
+Generating merged BMM file for the design top 'tb_top_mlp'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'tb_top_mlp'...
+Generating merged BMM file for the design top 'tb_top_mlp'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top_mlp' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L smartconnect_v1_0 -L xilinx_vip -prj tb_top_mlp_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/glbl_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layer1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layer2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layer3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layer4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layer5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/local_ctrl_layer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_ctrl_layer1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/local_ctrl_layer2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_ctrl_layer2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/local_ctrl_layer3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_ctrl_layer3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/local_ctrl_layer4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_ctrl_layer4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/local_ctrl_layer5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_ctrl_layer5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/mac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/pu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/pu_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pu_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/single_port_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_port_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/temp_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module temp_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/temp_buf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module temp_buf
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sim_1/new/tb_top_mlp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top_mlp
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_mlp_0/done_intr_o(undef) and /processing_system7_0/IRQ_F2P(intr)
+Generating merged BMM file for the design top 'tb_top_mlp'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim'
+"xelab -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_mlp_behav xil_defaultlib.tb_top_mlp xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_mlp_behav xil_defaultlib.tb_top_mlp xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 32 for port 'y_buf_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sim_1/new/tb_top_mlp.v:31]
+WARNING: [VRFC 10-3091] actual bit length 24 differs from formal bit length 32 for port 'dsp_output_o' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/pu.v:50]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 7 for port 'temp_wr_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer1.v:98]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer3.v:98]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 7 for port 'layer3_buf_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/top.v:127]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 6 for port 'temp_rd_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/top.v:133]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 6 for port 'x_addr_o' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer4.v:43]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'temp_wr_addr_o' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer4.v:49]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'temp_wr_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer4.v:87]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'temp_rd_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer4.v:88]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer5.v:66]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.local_ctrl_layer1
+Compiling module xil_defaultlib.mac
+Compiling module xil_defaultlib.pu(COEFF=17'b0100110)
+Compiling module xil_defaultlib.temp_bram_default
+Compiling module xil_defaultlib.single_port_bram(WIDTH=8,DEPTH=7...
+Compiling module xil_defaultlib.single_port_bram(WIDTH=1024,DEPT...
+Compiling module xil_defaultlib.layer1
+Compiling module xil_defaultlib.local_ctrl_layer2
+Compiling module xil_defaultlib.pu(MAC_NUM=32)
+Compiling module xil_defaultlib.temp_bram(MAC_CNT=64)
+Compiling module xil_defaultlib.single_port_bram(WIDTH=256,DEPTH...
+Compiling module xil_defaultlib.layer2
+Compiling module xil_defaultlib.local_ctrl_layer3
+Compiling module xil_defaultlib.pu(COEFF=17'b0110100001,MAC_NUM=...
+Compiling module xil_defaultlib.single_port_bram(WIDTH=256,DEPTH...
+Compiling module xil_defaultlib.layer3
+Compiling module xil_defaultlib.local_ctrl_layer4
+Compiling module xil_defaultlib.pu(COEFF=17'b0101011111,MAC_NUM=...
+Compiling module xil_defaultlib.temp_bram(MAC_CNT=32)
+Compiling module xil_defaultlib.single_port_bram(WIDTH=128,DEPTH...
+Compiling module xil_defaultlib.layer4
+Compiling module xil_defaultlib.local_ctrl_layer5
+Compiling module xil_defaultlib.pu_3_default
+Compiling module xil_defaultlib.single_port_bram(WIDTH=80,DEPTH=...
+Compiling module xil_defaultlib.layer5
+Compiling module xil_defaultlib.temp_buf(ADDR_WIDTH=32)
+Compiling module xil_defaultlib.glbl_ctrl
+Compiling module xil_defaultlib.top_default
+Compiling module xil_defaultlib.tb_top_mlp
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_mlp_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_48ac.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_48ac.protoinst for the following reason(s):
+There are no instances of module "bd_48ac" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1460.977 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+update_compile_order -fileset sources_1
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_mlp_0/done_intr_o(undef) and /processing_system7_0/IRQ_F2P(intr)
+Generating merged BMM file for the design top 'tb_top_mlp'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'tb_top_mlp'...
+Generating merged BMM file for the design top 'tb_top_mlp'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top_mlp' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L smartconnect_v1_0 -L xilinx_vip -prj tb_top_mlp_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/glbl_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layer1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layer2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layer3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layer4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layer5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/local_ctrl_layer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_ctrl_layer1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/local_ctrl_layer2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_ctrl_layer2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/local_ctrl_layer3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_ctrl_layer3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/local_ctrl_layer4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_ctrl_layer4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/local_ctrl_layer5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_ctrl_layer5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/mac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/pu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/pu_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pu_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/single_port_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_port_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/temp_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module temp_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/temp_buf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module temp_buf
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sim_1/new/tb_top_mlp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top_mlp
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_mlp_0/done_intr_o(undef) and /processing_system7_0/IRQ_F2P(intr)
+Generating merged BMM file for the design top 'tb_top_mlp'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim'
+"xelab -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_mlp_behav xil_defaultlib.tb_top_mlp xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_mlp_behav xil_defaultlib.tb_top_mlp xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 32 for port 'y_buf_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sim_1/new/tb_top_mlp.v:31]
+WARNING: [VRFC 10-3091] actual bit length 24 differs from formal bit length 32 for port 'dsp_output_o' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/pu.v:50]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 7 for port 'temp_wr_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer1.v:98]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer3.v:98]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 7 for port 'layer3_buf_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/top.v:114]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 6 for port 'temp_rd_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/top.v:120]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 6 for port 'x_addr_o' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer4.v:43]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'temp_wr_addr_o' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer4.v:49]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'temp_wr_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer4.v:87]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'temp_rd_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer4.v:88]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer5.v:66]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.local_ctrl_layer1
+Compiling module xil_defaultlib.mac
+Compiling module xil_defaultlib.pu(COEFF=17'b0100110)
+Compiling module xil_defaultlib.temp_bram_default
+Compiling module xil_defaultlib.single_port_bram(WIDTH=8,DEPTH=7...
+Compiling module xil_defaultlib.single_port_bram(WIDTH=1024,DEPT...
+Compiling module xil_defaultlib.layer1
+Compiling module xil_defaultlib.local_ctrl_layer2
+Compiling module xil_defaultlib.pu(MAC_NUM=32)
+Compiling module xil_defaultlib.temp_bram(MAC_CNT=64)
+Compiling module xil_defaultlib.single_port_bram(WIDTH=256,DEPTH...
+Compiling module xil_defaultlib.layer2
+Compiling module xil_defaultlib.local_ctrl_layer3
+Compiling module xil_defaultlib.pu(COEFF=17'b0110100001,MAC_NUM=...
+Compiling module xil_defaultlib.single_port_bram(WIDTH=256,DEPTH...
+Compiling module xil_defaultlib.layer3
+Compiling module xil_defaultlib.local_ctrl_layer4
+Compiling module xil_defaultlib.pu(COEFF=17'b0101011111,MAC_NUM=...
+Compiling module xil_defaultlib.temp_bram(MAC_CNT=32)
+Compiling module xil_defaultlib.single_port_bram(WIDTH=128,DEPTH...
+Compiling module xil_defaultlib.layer4
+Compiling module xil_defaultlib.local_ctrl_layer5
+Compiling module xil_defaultlib.pu_3_default
+Compiling module xil_defaultlib.single_port_bram(WIDTH=80,DEPTH=...
+Compiling module xil_defaultlib.layer5
+Compiling module xil_defaultlib.temp_buf
+Compiling module xil_defaultlib.glbl_ctrl
+Compiling module xil_defaultlib.top_default
+Compiling module xil_defaultlib.tb_top_mlp
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_mlp_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.1
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_48ac.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_48ac.protoinst for the following reason(s):
+There are no instances of module "bd_48ac" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1460.977 ; gain = 0.000
+run 10 us
+run 10 us
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/DSD_Streamline_try/dsd_mlp.runs/synth_1
+
+update_module_reference design_1_top_mlp_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.INT_BW')) * spirit:decode(id('MODELPARAM_VALUE.IN_IMG_NUM')))" into user parameter "X_BUF_DATA_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(784 * spirit:decode(id('MODELPARAM_VALUE.IN_IMG_NUM')))" into user parameter "X_BUF_DEPTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.INT_BW')) * spirit:decode(id('MODELPARAM_VALUE.IN_IMG_NUM')))" into user parameter "W_BUF_DATA_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(784 * spirit:decode(id('MODELPARAM_VALUE.IN_IMG_NUM')))" into user parameter "W_BUF_DEPTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "((10 * spirit:decode(id('MODELPARAM_VALUE.IN_IMG_NUM'))) * 4)" into user parameter "Y_BUF_DEPTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "spirit:ceil(spirit:log(2,(spirit:decode(id('MODELPARAM_VALUE.IN_IMG_NUM')) * 10)))" into user parameter "RBAW".
+WARNING: [IP_Flow 19-3157] Bus Interface 'rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'rst_n' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - axi_bram_ctrl_0_bram
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:module_ref:top_mlp:1.0 - top_mlp_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_mlp_0/done_intr_o(undef) and /processing_system7_0/IRQ_F2P(intr)
+Successfully read diagram <design_1> from BD file <C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/bd/design_1/design_1.bd>
+Upgrading 'C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_top_mlp_0_0 to use current project options
+WARNING: [BD 41-1731] Type mismatch between connected pins: /processing_system7_0/IRQ_F2P(intr) and /top_mlp_0_upgraded_ipi/done_intr_o(undef)
+Wrote  : <C:\DSD_Streamline_try\dsd_mlp.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+upgrade_ip: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1492.359 ; gain = 31.383
+update_module_reference: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1492.359 ; gain = 31.383
+launch_runs impl_2 -jobs 8
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [BD 41-2180] Resetting the memory initialization file of </axi_bram_ctrl_0_bram> to default.
+WARNING: [BD 41-927] Following properties on pin /top_mlp_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+INFO: [Common 17-365] Interrupt caught but 'launch_runs' cannot be canceled. Please wait for command to finish.
+Wrote  : <C:\DSD_Streamline_try\dsd_mlp.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+VHDL Output written to : C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+VHDL Output written to : C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1171] User-interrupt detected : Generation halted successfully for IP Integrator design C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/bd/design_1/design_1.bd
+INFO: [Common 17-681] Processing pending cancel.
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top_mlp' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L xilinx_vip -prj tb_top_mlp_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/glbl_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layer1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layer2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layer3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layer4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layer5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/local_ctrl_layer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_ctrl_layer1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/local_ctrl_layer2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_ctrl_layer2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/local_ctrl_layer3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_ctrl_layer3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/local_ctrl_layer4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_ctrl_layer4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/local_ctrl_layer5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_ctrl_layer5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/mac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/pu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/pu_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pu_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/single_port_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_port_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/temp_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module temp_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/temp_buf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module temp_buf
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.srcs/sim_1/new/tb_top_mlp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top_mlp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/DSD_Streamline_try/dsd_mlp.sim/sim_1/behav/xsim'
+"xelab -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_mlp_behav xil_defaultlib.tb_top_mlp xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_mlp_behav xil_defaultlib.tb_top_mlp xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 32 for port 'y_buf_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sim_1/new/tb_top_mlp.v:31]
+WARNING: [VRFC 10-3091] actual bit length 24 differs from formal bit length 32 for port 'dsp_output_o' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/pu.v:50]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 7 for port 'temp_wr_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer1.v:98]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer3.v:98]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 7 for port 'layer3_buf_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/top.v:115]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 6 for port 'temp_rd_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/top.v:121]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 6 for port 'x_addr_o' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer4.v:43]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'temp_wr_addr_o' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer4.v:49]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'temp_wr_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer4.v:87]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'temp_rd_addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer4.v:88]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'addr' [C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/new/layer5.v:66]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.local_ctrl_layer1
+Compiling module xil_defaultlib.mac
+Compiling module xil_defaultlib.pu(COEFF=17'b0100110)
+Compiling module xil_defaultlib.temp_bram_default
+Compiling module xil_defaultlib.single_port_bram(WIDTH=8,DEPTH=7...
+Compiling module xil_defaultlib.single_port_bram(WIDTH=1024,DEPT...
+Compiling module xil_defaultlib.layer1
+Compiling module xil_defaultlib.local_ctrl_layer2
+Compiling module xil_defaultlib.pu(MAC_NUM=32)
+Compiling module xil_defaultlib.temp_bram(MAC_CNT=64)
+Compiling module xil_defaultlib.single_port_bram(WIDTH=256,DEPTH...
+Compiling module xil_defaultlib.layer2
+Compiling module xil_defaultlib.local_ctrl_layer3
+Compiling module xil_defaultlib.pu(COEFF=17'b0110100001,MAC_NUM=...
+Compiling module xil_defaultlib.single_port_bram(WIDTH=256,DEPTH...
+Compiling module xil_defaultlib.layer3
+Compiling module xil_defaultlib.local_ctrl_layer4
+Compiling module xil_defaultlib.pu(COEFF=17'b0101011111,MAC_NUM=...
+Compiling module xil_defaultlib.temp_bram(MAC_CNT=32)
+Compiling module xil_defaultlib.single_port_bram(WIDTH=128,DEPTH...
+Compiling module xil_defaultlib.layer4
+Compiling module xil_defaultlib.local_ctrl_layer5
+Compiling module xil_defaultlib.pu_3_default
+Compiling module xil_defaultlib.single_port_bram(WIDTH=80,DEPTH=...
+Compiling module xil_defaultlib.layer5
+Compiling module xil_defaultlib.temp_buf
+Compiling module xil_defaultlib.glbl_ctrl
+Compiling module xil_defaultlib.top_default
+Compiling module xil_defaultlib.tb_top_mlp
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_mlp_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_48ac.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_48ac.protoinst for the following reason(s):
+There are no instances of module "bd_48ac" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1729.371 ; gain = 0.000
+run 10 us
+run 10 us
+save_wave_config {C:/DSD_Streamline_try/tb_top_mlp_behav.wcfg}
+launch_runs impl_2 -jobs 8
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </axi_bram_ctrl_0_bram> to default.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+VHDL Output written to : C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+VHDL Output written to : C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+Exporting to file c:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block top_mlp_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0_bram .
+Exporting to file C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/DSD_Streamline_try/dsd_mlp.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Wed Jul 24 16:46:59 2024] Launched synth_1...
+Run output will be captured here: C:/DSD_Streamline_try/dsd_mlp.runs/synth_1/runme.log
+[Wed Jul 24 16:46:59 2024] Launched impl_2...
+Run output will be captured here: C:/DSD_Streamline_try/dsd_mlp.runs/impl_2/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1754.699 ; gain = 25.328
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+[Wed Jul 24 17:10:37 2024] Launched impl_2...
+Run output will be captured here: C:/DSD_Streamline_try/dsd_mlp.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351AD6AF1A
+open_hw_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2901.289 ; gain = 1119.520
+set_property PROGRAM.FILE {C:/DSD_Streamline_try/dsd_mlp.runs/impl_2/design_1_wrapper.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {C:/DSD_Streamline_try/dsd_mlp.runs/impl_2/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/DSD_Streamline_try/dsd_mlp.runs/impl_2/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'design_1_i/top_mlp_0/inst/your_instance_name' at location 'uuid_65124BE4329A578FB22312EDDEECF95F' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/DSD_Streamline_try/dsd_mlp.runs/impl_2/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/DSD_Streamline_try/dsd_mlp.runs/impl_2/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/DSD_Streamline_try/dsd_mlp.runs/impl_2/design_1_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/top_mlp_0/inst/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/top_mlp_0/inst/your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 17:12:18
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/top_mlp_0/inst/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/top_mlp_0/inst/your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 17:12:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/DSD_Streamline_try/dsd_mlp.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+file copy -force C:/DSD_Streamline_try/dsd_mlp.runs/impl_2/design_1_wrapper.sysdef C:/DSD_Streamline_try/dsd_mlp.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/DSD_Streamline_try/dsd_mlp.sdk -hwspec C:/DSD_Streamline_try/dsd_mlp.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/DSD_Streamline_try/dsd_mlp.sdk -hwspec C:/DSD_Streamline_try/dsd_mlp.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351AD6AF1A
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 24 17:19:30 2024...

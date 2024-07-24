@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jun 22 21:21:09 2024
+# Process ID: 17004
+# Current directory: C:/DSD_Streamline _try/dsd_mlp.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/DSD_Streamline _try/dsd_mlp.sim/sim_1/behav/xsim/xsim.dir/tb_top_mlp_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/DSD_Streamline _try/dsd_mlp.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/DSD_Streamline _try/dsd_mlp.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/DSD_Streamline -notrace
+couldn't read file "C:/DSD_Streamline": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Sat Jun 22 21:21:09 2024...

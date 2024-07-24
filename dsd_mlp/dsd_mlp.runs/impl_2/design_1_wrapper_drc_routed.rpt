@@ -1,0 +1,224 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Wed Jul 24 18:51:15 2024
+| Host         : minjin-laptop running 64-bit major release  (build 9200)
+| Command      : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 37
++-----------+----------+-------------------------------------------------+------------+
+| Rule      | Severity | Description                                     | Violations |
++-----------+----------+-------------------------------------------------+------------+
+| DPIP-1    | Warning  | Input pipelining                                | 18         |
+| DPOP-2    | Warning  | MREG Output pipelining                          | 2          |
+| RTSTAT-10 | Warning  | No routable loads                               | 1          |
+| REQP-24   | Advisory | enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND | 16         |
++-----------+----------+-------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[0].MAC_layer1/acc_reg input design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[0].MAC_layer1/acc_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[10].MAC_layer1/acc_reg input design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[10].MAC_layer1/acc_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[12].MAC_layer1/acc_reg input design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[12].MAC_layer1/acc_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[15].MAC_layer1/acc_reg input design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[15].MAC_layer1/acc_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[16].MAC_layer1/acc_reg input design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[16].MAC_layer1/acc_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[17].MAC_layer1/acc_reg input design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[17].MAC_layer1/acc_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[1].MAC_layer1/acc_reg input design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[1].MAC_layer1/acc_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[20].MAC_layer1/acc_reg input design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[20].MAC_layer1/acc_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[23].MAC_layer1/acc_reg input design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[23].MAC_layer1/acc_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[24].MAC_layer1/acc_reg input design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[24].MAC_layer1/acc_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[26].MAC_layer1/acc_reg input design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[26].MAC_layer1/acc_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[31].MAC_layer1/acc_reg input design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[31].MAC_layer1/acc_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[3].MAC_layer1/acc_reg input design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[3].MAC_layer1/acc_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[48].MAC_layer1/acc_reg input design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[48].MAC_layer1/acc_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[76].MAC_layer1/acc_reg input design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[76].MAC_layer1/acc_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[80].MAC_layer1/acc_reg input design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[80].MAC_layer1/acc_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP design_1_i/top_mlp_0/inst/mlp_top/layer2_inst/PU_2/qdq_result_reg input design_1_i/top_mlp_0/inst/mlp_top/layer2_inst/PU_2/qdq_result_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP design_1_i/top_mlp_0/inst/mlp_top/layer4_inst/PU_4/qdq_result_reg input design_1_i/top_mlp_0/inst/mlp_top/layer4_inst/PU_4/qdq_result_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP design_1_i/top_mlp_0/inst/mlp_top/layer2_inst/PU_2/qdq_result_reg multiplier stage design_1_i/top_mlp_0/inst/mlp_top/layer2_inst/PU_2/qdq_result_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP design_1_i/top_mlp_0/inst/mlp_top/layer4_inst/PU_4/qdq_result_reg multiplier stage design_1_i/top_mlp_0/inst/mlp_top/layer4_inst/PU_4/qdq_result_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+26 net(s) have no routable loads. The problem bus(es) and/or net(s) are design_1_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/ENB_dly_D, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/s_bscan_tms, design_1_i/top_mlp_0/inst/your_instance_name/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[13] (the first 15 of 24 listed).
+Related violations: <none>
+
+REQP-24#1 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[0].MAC_layer1/acc_reg: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-24#2 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[10].MAC_layer1/acc_reg: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-24#3 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[12].MAC_layer1/acc_reg: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-24#4 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[15].MAC_layer1/acc_reg: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-24#5 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[16].MAC_layer1/acc_reg: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-24#6 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[17].MAC_layer1/acc_reg: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-24#7 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[1].MAC_layer1/acc_reg: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-24#8 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[20].MAC_layer1/acc_reg: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-24#9 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[23].MAC_layer1/acc_reg: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-24#10 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[24].MAC_layer1/acc_reg: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-24#11 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[26].MAC_layer1/acc_reg: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-24#12 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[31].MAC_layer1/acc_reg: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-24#13 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[3].MAC_layer1/acc_reg: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-24#14 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[48].MAC_layer1/acc_reg: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-24#15 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[76].MAC_layer1/acc_reg: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-24#16 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+design_1_i/top_mlp_0/inst/mlp_top/layer1_inst/PU_1/mac_gen[80].MAC_layer1/acc_reg: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+
