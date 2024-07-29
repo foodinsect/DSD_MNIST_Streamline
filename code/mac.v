@@ -3,8 +3,8 @@ module mac (
     input   wire                clk_i,
     input   wire                rstn_i,
     
-    input   wire                acc_en,        //2 pipeline delay
-    input   wire                relu_en,        //0 pipeline delay
+    input   wire                acc_en,        
+    input   wire                relu_en,        
     input   wire                mac_clear,
     
     input   wire signed [7:0]   image_data,     //image data 8bit
