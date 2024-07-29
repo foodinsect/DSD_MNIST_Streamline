@@ -37,7 +37,7 @@ always @(posedge clk_i) begin
         end else if(relu_en) begin
             acc <= acc[40] ? 41'sd0 : acc;
         end else if (mac_clear) begin
-            acc <= 0; 
+            acc <= 41'h0; 
         end 
     end
 end
