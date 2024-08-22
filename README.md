@@ -78,15 +78,15 @@ The implementation result is as follows:
 
 ## Speed
 ![CPU Speed](https://github.com/user-attachments/assets/61cc7a16-8704-4267-8e8c-29d8c5d727a1)  
-Total time in seconds: 0.000075 + 0.000090 + 0.000090 + 0.000089 + 0.000091 + 0.000089 + 0.000089 + 0.000090 + 0.000089 + 0.000098 = 0.000890 seconds  
-Milliseconds (ms): 0.000890 seconds × 1000 = 0.890 ms  
-Nanoseconds (ns): 0.000890 seconds × 1,000,000,000 = 890,000 ns  
+**Total time in seconds**: 0.000075 + 0.000090 + 0.000090 + 0.000089 + 0.000091 + 0.000089 + 0.000089 + 0.000090 + 0.000089 + 0.000098 = 0.000890 seconds  
+**Milliseconds (ms)**: 0.000890 seconds × 1000 = 0.890 ms  
+**Nanoseconds (ns)**: 0.000890 seconds × 1,000,000,000 = 890,000 ns  
   
-**CPU Speed** = 890,000 ns  
+### **CPU Speed** = 890,000 ns  
 
 ![FPGA Speed](https://github.com/user-attachments/assets/5e77b80a-f654-4e91-9afe-808c8d08443d)  
 
-HW Accelerator Speed = 69.992 ns  
+### **HW Accelerator Speed** = 69.992 ns  
   
 "**The FPGA hardware accelerator is approximately 12.72 times faster.**"  
 
