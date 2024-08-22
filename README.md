@@ -76,6 +76,14 @@ The implementation result is as follows:
 ### Power
   ![Power Report](https://github.com/foodinsect/DSD_MNIST_Streamline/assets/36304709/f84f75c3-3c72-48d3-a2ee-59e55c9a3cfb)  
 
+## Speed
+![CPU Speed](https://github.com/user-attachments/assets/61cc7a16-8704-4267-8e8c-29d8c5d727a1)
+CPU Speed = 0.890 ms
+
+![FPGA Speed](https://github.com/user-attachments/assets/5e77b80a-f654-4e91-9afe-808c8d08443d)
+HW Accelerator Speed = 0.069992 ms
+
+"**The FPGA hardware accelerator is approximately 12.72 times faster.**"
 
 ## Conclusion
 The DSD_MNIST_Streamline project successfully implements an efficient digital signal processing system through its five-layer structure. The simulation and implementation results for each layer validate the system's performance. This project demonstrates high performance and efficiency in processing the MNIST dataset.
